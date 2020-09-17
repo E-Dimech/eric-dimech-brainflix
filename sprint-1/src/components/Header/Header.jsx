@@ -3,6 +3,7 @@ import Logo from '../../assets/Logo/Logo-brainflix.svg';
 import Magnifyer from '../../assets/Icons/SVG/Icon-search.svg';
 import Upload from '../../assets/Icons/SVG/Icon-upload.svg';
 import Mohan from '../../assets/Images/Mohan-muruge.jpg';
+import './Header.scss';
 
 const Header = () => {
     return (

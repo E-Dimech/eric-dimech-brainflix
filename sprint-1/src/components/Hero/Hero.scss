@@ -1,0 +1,124 @@
+@import '../../../public/mixins';
+
+.hero {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    // border-bottom: 4px solid blue;
+    &__container {
+        width: 100%;
+    }
+    &__video {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    &__video-controls {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 35.5%;
+        left: 5%;
+    }
+    &__container-play {
+        position: relative;
+        height: 10vw;
+        width: 15%;
+        background-color: black;
+        opacity: .6;
+        border-radius: 15%;
+    }
+    &__play-button {
+        position: absolute;
+        width: 7vw;
+        height: 7vw;
+        top: 15%;
+        left: 25%;
+    }
+    &__container-scrub {
+        width: 45%;
+        position: relative;
+        height: 10vw;
+        background-color: black;
+        opacity: .6;
+        border-radius: 7%;
+    }
+    &__scrub-bar {
+        position: absolute;
+        width: 90%;
+        height: 10%;
+        top: 45%;
+        left: 4%;
+        background-color: blue;
+    }
+    &__container-full-volume {
+        position: relative;
+        height: 10vw;
+        width: 30%;
+        background-color: black;
+        opacity: .6;
+        border-radius: 15%;
+    }
+    &__full-screen {
+        position: absolute;
+        width: 7vw;
+        height: 7vw;
+        top: 15%;
+        left: 13%;
+    }
+    &__volume {
+        position: absolute; 
+        width: 7vw;
+        height: 7vw;
+        top: 15%;
+        left: 58%;
+    }
+    &__title {
+        margin-left: 5%;
+        margin-bottom: 1%;
+    }
+    &__subtitle {
+        display: flex;
+        margin-left: 5%;
+    }
+    &__subtitle-author {
+        margin-right: 4%;
+    }
+    &__socials {
+        display: flex;
+        margin-left: 5%;
+    }
+    &__views {
+        display: flex;
+        margin-right: 10%;
+    }
+    &__views-img {
+        margin-right: 7%;
+    }
+    // &__views-num {
+    //     margin-right: 3%;
+    // }
+    // &__views {
+    //     display: flex;
+    // }
+    &__likes {
+        display: flex;
+    }
+    &__likes-img {
+        margin-right: 7%;
+    }
+    &__bottom-border {
+        width: 90%;
+        display: flex;
+        margin-left: 4.5%;
+        // align-content: center;
+        border-bottom: 4px solid blue;
+    }
+    &__biography {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+  }
+
+  
