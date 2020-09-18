@@ -1,0 +1,53 @@
+@import '../../partials/mixins';
+
+.comment-form {
+    height: 70vw;
+    width: 95%;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    padding-left: 5%;
+    
+    &__img {
+    width: 16vw;
+    height: 16vw;
+    margin-top: 12%;
+    margin-right: 5%;
+    border-radius: 50%;
+    }
+    &__list {
+        padding: 0;
+    }
+    &__input {
+    width: 66vw;
+    height: 29vw;
+    margin-top: 3%;
+    border-radius: .2rem;
+    border: solid green 2px;
+    }
+    &__name {
+        list-style: none;
+        font-size: .8rem;
+        color: grey;
+        font-weight: bold;
+        margin-bottom: 8%;
+    }
+    &__button-container {
+        list-style: none;
+    }
+    &__button {
+    width: 69vw;
+    height: 15vw;
+    font-size: .9rem;
+    font-weight: 600;
+    background-color: #0095FF;
+    color: WHITE;
+    border: none;
+    border-radius: .2rem;   
+    }
+}
+
+.comment-count {
+    margin-left: 5%;
+    margin-top: 15%;
+}
