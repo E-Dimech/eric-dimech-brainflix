@@ -4,7 +4,7 @@ import './comments.scss';
 
 
 class Comments extends React.Component {
-    state= {
+    state = {
         defaultComments: [
             {
                 id: 0,

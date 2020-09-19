@@ -1,0 +1,23 @@
+@import '../../partials/mixins';
+
+.video-build {
+    width: 100%;
+    height: auto;
+
+    &__container {
+        display: flex;
+        margin-bottom: 5%;
+    }
+    &__img {
+        height: 30vw;
+        width: 35vw;
+        margin-left: 5%;
+        border-radius: 4px;
+    }
+    &__titles-container {
+        flex-direction: column;
+    }
+    &__title {
+        margin-top: 2%;
+    }
+}
