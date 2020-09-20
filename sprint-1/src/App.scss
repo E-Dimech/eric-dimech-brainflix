@@ -1,0 +1,21 @@
+@import '../src/partials/mixins';
+@import '../src/partials/variables';
+
+.test-test {
+    display: flex;
+}
+
+.main-col {
+    @include desktop {
+        display: flex;
+        width: 60%;
+        flex-flow:  wrap;
+    }
+}
+
+.sub-col {
+    @include desktop {
+        display: flex;
+        width: 40%;
+    }
+}

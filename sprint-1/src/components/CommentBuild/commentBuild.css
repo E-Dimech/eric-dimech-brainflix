@@ -38,7 +38,14 @@
 }
 @media screen and (min-width: 768px) {
   .comment-build__container {
-    margin-left: 2%;
+    margin-left: 5%;
+    width: 89%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-build__container {
+    width: 82%;
+    margin-left: 18%;
   }
 }
 .comment-build__circle {
@@ -53,6 +60,14 @@
   .comment-build__circle {
     height: 5vw;
     width: 5vw;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-build__circle {
+    height: 3vw;
+    width: 3vw;
+    margin-left: 0;
   }
 }
 .comment-build__name {
@@ -67,8 +82,14 @@
 @media screen and (min-width: 768px) {
   .comment-build__name {
     margin-top: 4%;
+    margin-left: 2%;
     width: auto;
     padding-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-build__name {
+    margin-left: 2%;
   }
 }
 .comment-build__date {
@@ -93,7 +114,13 @@
 }
 @media screen and (min-width: 768px) {
   .comment-build__comment {
-    margin-left: 11.5%;
+    margin-left: 7.8%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comment-build__comment {
+    font-size: 0.75rem;
+    margin-left: 8%;
   }
 }
 /*# sourceMappingURL=commentBuild.css.map */

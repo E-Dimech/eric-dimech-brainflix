@@ -15,7 +15,27 @@
 .video-build {
   width: 100%;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  .video-build {
+    width: 88.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video-build {
+    border-left: solid 1px #E1E1E1;
+  }
+}
+.video-build__border {
   border-top: 1px solid #E1E1E1;
+  width: 90%;
+  margin-left: 5%;
+}
+@media screen and (min-width: 768px) {
+  .video-build__border {
+    width: 100%;
+    margin-left: 5%;
+  }
 }
 .video-build__section-title {
   color: #AFAFAF;
@@ -29,6 +49,11 @@
   .video-build__section-title {
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video-build__section-title {
+    font-size: 0.73rem;
   }
 }
 .video-build__container {
@@ -55,6 +80,12 @@
     width: 15vw;
   }
 }
+@media screen and (min-width: 1200px) {
+  .video-build__img {
+    height: 5vw;
+    width: 8.4vw;
+  }
+}
 .video-build__titles-container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -65,6 +96,11 @@
 @media screen and (min-width: 768px) {
   .video-build__titles-container {
     width: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video-build__titles-container {
+    width: 40%;
   }
 }
 .video-build__title {
@@ -82,6 +118,11 @@
     margin-bottom: 4%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .video-build__title {
+    font-size: 0.85rem;
+  }
+}
 .video-build__channel {
   margin-top: 2%;
   margin-left: 10%;
@@ -93,6 +134,11 @@
 @media screen and (min-width: 768px) {
   .video-build__channel {
     font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video-build__channel {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=asideVideoBuilder.css.map */

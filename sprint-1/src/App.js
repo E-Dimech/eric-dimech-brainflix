@@ -12,10 +12,12 @@ import ImageNine from '../src/assets/Images/video-list-8.jpg';
 
 import Header from './components/Header/Header';
 import Video from './components/Video/Video';
+import VideoInfo from './components/VideoInfo/VideoInfo';
 import CommentForm from './components/CommentForm/CommentForm';
 import CommentBuild from './components/CommentBuild/CommentBuild';
 import AsideVideoBuilder from './components/AsideVideoBuilder/AsideVideoBuilder';
-import './components/Header/Header.scss';
+
+import './App.scss';
 
 
 
@@ -122,10 +124,17 @@ class App extends React.Component {
     return (
     <div className="App">
       <Header />
-      <Video videoPlayerInfo={this.state.videoPlayer} />
-      <CommentForm />
-      <CommentBuild comment={this.state.comment} />
-      <AsideVideoBuilder sideVideos={this.state.sideVideo} />
+        <Video />
+      <div className="test-test">
+        <section className="main-col">
+            <VideoInfo videoPlayerInfo={this.state.videoPlayer} />
+            <CommentForm />
+            <CommentBuild comment={this.state.comment} />
+        </section>
+        <aside className="sub-col">
+            <AsideVideoBuilder sideVideos={this.state.sideVideo} />
+        </aside>
+      </div>
     </div>
    );
   }

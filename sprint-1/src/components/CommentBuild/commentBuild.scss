@@ -13,9 +13,12 @@
         flex-flow: wrap;
         border-top: 1px solid #E1E1E1;
         @include tablet {
-            // flex-direction: row;
-            // flex-flow: none;
-            margin-left: 2%;
+            margin-left: 5%;
+            width: 89%;
+        }
+        @include desktop {
+            width: 82%;
+            margin-left: 18%;
         }
     }
     &__circle {
@@ -28,6 +31,12 @@
         @include tablet {
             height: 5vw;
             width: 5vw;
+            margin-left: 0;
+        }
+        @include desktop {
+            height: 3vw;
+            width: 3vw;
+            margin-left: 0;
         }
     }
     &__name {
@@ -40,12 +49,15 @@
         padding-right: 5%;
         @include tablet {
             margin-top: 4%;
+            margin-left: 2%;
             width: auto;
             padding-right: 0;
         }
+        @include desktop {
+            margin-left: 2%;
+        }
     }
     &__date {
-        // color: $accent__color;
         height: 12%;
         font-size: .9rem;
         margin-top: 5.7%;
@@ -63,7 +75,11 @@
         width: 90%;
         color: #323232;
         @include tablet {
-            margin-left: 11.5%;
+            margin-left: 7.8%;
+        }
+        @include desktop {
+            font-size: .75rem;
+            margin-left: 8%;
         }
     }
 }

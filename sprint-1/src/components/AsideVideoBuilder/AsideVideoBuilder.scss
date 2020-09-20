@@ -4,9 +4,21 @@
 .video-build {
     width: 100%;
     height: auto;
-    border-top: 1px solid #E1E1E1;
-    
-
+    @include tablet {
+        width: 88.5%;
+    }
+    @include desktop {
+        border-left: solid 1px #E1E1E1;
+    }
+    &__border {
+        border-top: 1px solid #E1E1E1;
+        width: 90%;
+        margin-left: 5%;
+        @include tablet {
+            width: 100%;
+            margin-left: 5%;
+        }
+    }
     &__section-title {
         color: #AFAFAF;
         font-size: .8rem;
@@ -18,7 +30,9 @@
             margin-top: 5%;
             margin-bottom: 5%;
         }
-    
+        @include desktop {
+            font-size: .73rem;
+        }
     }
     &__container {
         display: flex;
@@ -37,6 +51,10 @@
             height: 9vw;
             width: 15vw;
         }
+        @include desktop {
+            height: 5vw;
+            width: 8.4vw;
+        }
     }
     &__titles-container {
         flex-direction: column;
@@ -44,12 +62,14 @@
         @include tablet {
             width: 30%;
         }
+        @include desktop {
+            width: 40%;
+        }
     }
     &__title {
         margin-top: 0;
         margin-left: 10%;
         margin-bottom: 6%;
-        // margin-right: 11%;
         color: #323232;
         font-weight: 600;
         font-size: .9rem;
@@ -58,8 +78,9 @@
             font-size: 1rem;
             margin-bottom: 4%;
         }
-
-        
+        @include desktop {
+            font-size: .85rem;
+        }
     }
     &__channel {
         margin-top: 2%;
@@ -70,6 +91,9 @@
         text-decoration: none;
         @include tablet {
             font-size: .85rem;
+        }
+        @include desktop {
+            font-size: .8rem;
         }
     }
 }

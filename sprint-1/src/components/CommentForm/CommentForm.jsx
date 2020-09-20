@@ -12,7 +12,7 @@ const CommentForm = () => {
             <ul className="comment-form__list">
                 <li className="comment-form__name">
                     <label id="name-label" htmlFor="comment-form">JOIN THE CONVERSATION</label>
-                    <input className="comment-form__input" type="text" id="name" name="user-name" placeholder="Write comment here" />
+                    <textarea className="comment-form__input" type="text" id="name" name="user-name" placeholder="Write comment here" />
                 </li>
                 <li className="comment-form__button-container">
                     <button className="comment-form__button" id="button">COMMENT</button>

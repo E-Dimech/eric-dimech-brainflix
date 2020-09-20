@@ -23,6 +23,11 @@
     margin-top: 2%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .video {
+    margin-top: 0;
+  }
+}
 .video__container {
   width: 100%;
   height: auto;
@@ -65,20 +70,19 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: absolute;
-  top: 26.5%;
-  bottom: 67%;
+  top: 75%;
   left: 5%;
 }
 @media screen and (min-width: 768px) {
   .video__controls {
-    top: 52%;
+    top: 88%;
   }
 }
 @media screen and (min-width: 1200px) {
   .video__controls {
     width: 64%;
     margin-left: 13%;
-    top: 60%;
+    top: 91%;
   }
 }
 .video__container-play {
@@ -119,7 +123,7 @@
   .video__play-button {
     width: 1.5vw;
     height: 1.5vw;
-    top: 19%;
+    top: 16.5%;
   }
 }
 .video__container-scrub {
@@ -172,6 +176,7 @@
 @media screen and (min-width: 1200px) {
   .video__scrub-bar-time {
     font-size: 0.6 0.5rem;
+    top: 23%;
   }
 }
 .video__container-full-volume {
@@ -212,7 +217,7 @@
   .video__full-screen {
     height: 1.3vw;
     width: 1.3vw;
-    top: 23%;
+    top: 20%;
   }
 }
 .video__volume {
@@ -233,159 +238,7 @@
   .video__volume {
     height: 1.3vw;
     width: 1.3vw;
-    top: 23%;
-  }
-}
-.video__title {
-  margin-left: 5%;
-  margin-bottom: 1%;
-  color: #323232;
-  font-size: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .video__title {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .video__title {
-    font-size: 1.9rem;
-    margin-left: 4.3%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .video__info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 90%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-.video__subtitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 48%;
-  margin-left: 5%;
-}
-@media screen and (min-width: 768px) {
-  .video__subtitle {
-    margin-top: 1%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .video__subtitle {
-    margin-top: 0;
-  }
-}
-.video__subtitle-author {
-  margin-right: 4%;
-  color: #323232;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: 3.5%;
-  margin-bottom: 3%;
-}
-@media screen and (min-width: 1200px) {
-  .video__subtitle-author {
-    font-size: 0.9rem;
-    margin-top: 0;
-  }
-}
-.video__subtitle-date {
-  color: #AFAFAF;
-  font-size: 0.9rem;
-  margin-top: 4.5%;
-  margin-bottom: 3%;
-}
-@media screen and (min-width: 1200px) {
-  .video__subtitle-date {
-    font-size: 0.8rem;
-    margin-top: 0.2%;
-  }
-}
-.video__socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 5%;
-}
-@media screen and (min-width: 768px) {
-  .video__socials {
-    margin-left: 0;
-    margin-right: 3%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .video__socials {
-    margin-top: 0;
-  }
-}
-.video__views {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 10%;
-  color: #323232;
-  font-size: 0.9rem;
-  margin-bottom: 4%;
-}
-.video__views-img {
-  margin-right: 7%;
-}
-@media screen and (min-width: 1200px) {
-  .video__views-img {
-    width: 1.7vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .video__views-num {
-    font-size: 0.8rem;
-  }
-}
-.video__likes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #323232;
-  font-size: 0.9rem;
-  margin-bottom: 4%;
-}
-.video__likes-img {
-  margin-right: 7%;
-}
-@media screen and (min-width: 768px) {
-  .video__likes-img {
-    margin-left: 15%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .video__likes-img {
-    width: 1.3vw;
-  }
-}
-.video__bottom-border {
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 4.5%;
-  border-bottom: 1px solid #E1E1E1;
-}
-.video__biography {
-  margin-left: 5.2%;
-  margin-right: 5.2%;
-  color: #323232;
-  font-size: 0.75rem;
-}
-@media screen and (min-width: 768px) {
-  .video__biography {
-    width: 66%;
-    font-size: 0.85rem;
-    margin-left: 4.5%;
+    top: 20%;
   }
 }
 /*# sourceMappingURL=Video.css.map */
