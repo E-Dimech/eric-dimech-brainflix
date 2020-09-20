@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/globalfont/AvenirNextProLT/Alternativefiles/Avenir.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/globalfont/AvenirNextProLT/Alternativefiles/AvenirBold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/globalfont/AvenirNextProLT/Alternativefiles/AvenirDemi.ttf) format("truetype");
+  font-weight: 600;
+}
 .comment-build {
   width: 100%;
   display: -webkit-box;
@@ -9,7 +23,7 @@
           flex-direction: column;
 }
 .comment-build__container {
-  width: 90%;
+  width: 91%;
   margin-left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,23 +34,42 @@
           flex-direction: column;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .comment-build__container {
+    margin-left: 2%;
+  }
 }
 .comment-build__circle {
   height: 13vw;
   width: 13vw;
   border-radius: 50%;
-  background-color: black;
+  background-color: #E1E1E1;
   margin-top: 4%;
   margin-left: 3%;
+}
+@media screen and (min-width: 768px) {
+  .comment-build__circle {
+    height: 5vw;
+    width: 5vw;
+  }
 }
 .comment-build__name {
   width: 45%;
   height: 12%;
+  color: #323232;
   font-size: 0.9rem;
   font-weight: 600;
   margin: 5.9% 0 0 3%;
   padding-right: 5%;
+}
+@media screen and (min-width: 768px) {
+  .comment-build__name {
+    margin-top: 4%;
+    width: auto;
+    padding-right: 0;
+  }
 }
 .comment-build__date {
   height: 12%;
@@ -44,11 +77,23 @@
   margin-top: 5.7%;
   margin-bottom: 0;
   padding-left: 1.5%;
+  color: #AFAFAF;
+}
+@media screen and (min-width: 768px) {
+  .comment-build__date {
+    margin-top: 4%;
+  }
 }
 .comment-build__comment {
   margin-left: 20%;
   margin-top: 0;
-  font-size: 0.9rem;
-  width: 78.5%;
+  font-size: 0.89rem;
+  width: 90%;
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  .comment-build__comment {
+    margin-left: 11.5%;
+  }
 }
 /*# sourceMappingURL=commentBuild.css.map */

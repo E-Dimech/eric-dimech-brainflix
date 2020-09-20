@@ -1,23 +1,75 @@
 @import '../../partials/mixins';
+@import '../../partials/variables';
 
 .video-build {
     width: 100%;
     height: auto;
+    border-top: 1px solid #E1E1E1;
+    
 
+    &__section-title {
+        color: #AFAFAF;
+        font-size: .8rem;
+        font-weight: 600;
+        margin-top: 12%;
+        margin-left: 5%;
+        margin-bottom: 12%;
+        @include tablet {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    
+    }
     &__container {
         display: flex;
-        margin-bottom: 5%;
+        margin-bottom: 6%;
+        text-decoration: none;
+        @include tablet {
+            margin-bottom: 2%;
+        }
     }
     &__img {
-        height: 30vw;
-        width: 35vw;
+        height: 22vw;
+        width: 38vw;
         margin-left: 5%;
         border-radius: 4px;
+        @include tablet {
+            height: 9vw;
+            width: 15vw;
+        }
     }
     &__titles-container {
         flex-direction: column;
+        width: 54%;
+        @include tablet {
+            width: 30%;
+        }
     }
     &__title {
+        margin-top: 0;
+        margin-left: 10%;
+        margin-bottom: 6%;
+        // margin-right: 11%;
+        color: #323232;
+        font-weight: 600;
+        font-size: .9rem;
+        text-decoration: none;
+        @include tablet {
+            font-size: 1rem;
+            margin-bottom: 4%;
+        }
+
+        
+    }
+    &__channel {
         margin-top: 2%;
+        margin-left: 10%;
+        color: #323232;
+        font-weight: 400;
+        font-size: .8rem;
+        text-decoration: none;
+        @include tablet {
+            font-size: .85rem;
+        }
     }
 }

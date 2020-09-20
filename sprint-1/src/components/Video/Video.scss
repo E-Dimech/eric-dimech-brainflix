@@ -1,0 +1,306 @@
+@import '../../partials/mixins';
+@import '../../partials/variables';
+
+.video {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    position: relative;
+    // border-bottom: 4px solid blue;
+    @include tablet {
+        margin-top: 2%;
+    }
+    &__container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        @include tablet {
+            background-color: black;
+            height: 50vw;
+        }
+        @include desktop {
+            height: 36vw;
+        }
+
+    }
+    &__hero {
+        width: 100%;
+        height: auto;
+        // position: relative;
+        @include tablet {
+            width: 90%;
+            height: 100%;
+            margin-left: 5%;
+        }
+        @include desktop {
+            width: 65%;
+            margin-left: 17.5%;
+        }
+    }
+    &__controls {
+        width: 90%;
+        // height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 26.5%;
+        bottom: 67%;
+        left: 5%;
+        @include tablet {
+            top: 52%;
+        }
+        @include desktop {
+            width: 64%;
+            margin-left: 13%;
+            top: 60%;
+        }
+        
+    }
+    &__container-play {
+        position: relative;
+        height: 10vw;
+        width: 15%;
+        margin-right: 1%;
+        background-color: rgb(15, 15, 15);
+        opacity: .7;
+        border-radius: 4px;
+        @include tablet {
+            height: 4vw;
+            width: 6.5%;
+        }
+        @include desktop {
+            height: 2.2vw;
+            width: 5.5%;
+        }
+    }
+    &__play-button {
+        position: absolute;
+        width: 6vw;
+        height: 6vw;
+        top: 20%;
+        left: 30%;
+        @include tablet {
+            width: 2.5vw;
+            height: 2.5vw;  
+        }
+        @include desktop {
+            width: 1.5vw;
+            height: 1.5vw;
+            top: 19%;
+        }
+    }
+    &__container-scrub {
+        width: 49%;
+        position: relative;
+        height: 10vw;
+        margin-right: 1%;
+        background-color: rgb(15, 15, 15);
+        opacity: .7;
+        border-radius: 4px;
+        @include tablet {
+            height: 4vw;
+            width: 77%;   
+        }
+        @include desktop {
+            height: 2.2vw;
+        }
+    }
+    &__scrub-bar {
+        position: absolute;
+        width: 90%;
+        height: 13%;
+        top: 45%;
+        left: 5%;
+        background-color: black;
+        @include tablet {
+            width: 80%;
+        }
+    }
+    &__scrub-bar-time {
+        display: none;
+        @include tablet {
+            position: absolute;
+            display: unset;
+            color: white;
+            font-size: .7rem;
+            left: 88%;
+            top: 26%;
+            margin-top: 0;
+        }
+        @include desktop {
+            font-size: .6.5rem;
+        }
+    }
+    &__container-full-volume {
+        position: relative;
+        height: 10vw;
+        width: 28%;
+        background-color: rgb(15, 15, 15);
+        opacity: .7;
+        border-radius: 4px;
+        @include tablet {
+            height: 4vw;
+            width: 10%;
+        }
+        @include desktop {
+            height: 2.2vw;
+            width: 9%;
+        }
+    }
+    &__full-screen {
+        position: absolute;
+        width: 6vw;
+        height: 6vw;
+        top: 21%;
+        left: 17%;
+        @include tablet {
+            width: 2vw;
+            height: 2vw;
+            top: 25%;
+        }
+        @include desktop {
+            height: 1.3vw;
+            width: 1.3vw;
+            top: 23%;
+        }
+    }
+    &__volume {
+        position: absolute; 
+        width: 6vw;
+        height: 6vw;
+        top: 21%;
+        left: 62%;
+        @include tablet {
+            width: 2vw;
+            height: 2vw;
+            top: 25%;    
+        }
+        @include desktop {
+            height: 1.3vw;
+            width: 1.3vw;
+            top: 23%;
+        }
+    }
+    &__title {
+        margin-left: 5%;
+        margin-bottom: 1%;
+        color: #323232;
+        font-size: 1.5rem;
+        @include tablet {
+            font-size: 2.2rem;
+        }
+        @include desktop {
+            font-size: 1.9rem;
+            margin-left: 4.3%;
+        }
+    }
+    &__info {
+        @include tablet {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+        }
+    }
+    &__subtitle {
+        display: flex;
+        width: 48%;
+        margin-left: 5%;
+        @include tablet {
+            margin-top: 1%;
+        }
+        @include desktop {
+            margin-top: 0;
+        }
+
+        // justify-content: space-evenly;
+    }
+    &__subtitle-author {
+        margin-right: 4%;
+        color: #323232;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 3.5%;
+        margin-bottom: 3%;
+        @include desktop {
+            font-size: .9rem;
+            margin-top: 0;
+        }
+    }
+    &__subtitle-date {
+        color: #AFAFAF;
+        font-size: .9rem;
+        margin-top: 4.5%;
+        margin-bottom: 3%;
+        @include desktop {
+            font-size: .8rem;
+            margin-top: .2%;
+        }
+    }
+    &__socials {
+        display: flex;
+        margin-left: 5%;
+        @include tablet {
+            margin-left: 0;
+            margin-right: 3%;
+        }
+        
+    }
+    &__views {
+        display: flex;
+        margin-right: 10%;
+        color: #323232;
+        font-size: .9rem;
+        margin-bottom: 4%;
+        
+    }
+    &__views-img {
+        margin-right: 7%;
+        @include desktop {
+            width: 1.7vw;
+        }
+        
+    }
+    &__views-num {
+        @include desktop {
+            font-size: .8rem;
+        }
+        
+    }
+    // &__views {
+    //     display: flex;
+    // }
+    &__likes {
+        display: flex;
+        color: #323232;
+        font-size: .9rem;
+        margin-bottom: 4%;
+    }
+    &__likes-img {
+        margin-right: 7%;
+        @include tablet {
+            margin-left: 15%;
+        }
+        @include desktop {
+            width: 1.3vw;
+        }
+    }
+    &__bottom-border {
+        width: 90%;
+        display: flex;
+        margin-left: 4.5%;
+        border-bottom: 1px solid #E1E1E1;
+    }
+    &__biography {
+        margin-left: 5.2%;
+        margin-right: 5.2%;
+        color: #323232;
+        font-size: .75rem;
+        @include tablet {
+            width: 66%;
+            font-size: .85rem;
+            margin-left: 4.5%;
+        }
+    }
+  }
+
+  

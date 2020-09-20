@@ -1,4 +1,5 @@
 @import '../../partials/mixins';
+@import '../../partials/variables';
 
 .header {
   width: 100%;
@@ -6,52 +7,148 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablet {
+    flex-direction: row;
+    margin-top: 0;
+    height: auto;
+    align-items: baseline;
+  }
+  @include desktop {
+    width: 80%;
+    margin-left: 10%;
+    // ::placeholder {
+    //   right: 9%;
+    // }
+    
+  }
   &__logo-img {
     width: 38vw;
     margin-top: 3%;
+    @include tablet {
+      width: 16vw;
+      display: flex;
+      margin-left: 15%;
+      margin-top: 0;
+    }
+    @include desktop {
+      width: 10vw;
+    }
   }
   &__search-container {
     position: relative;
     width: 90%;
     margin-top: 3%;
     margin-right: .5%;
+    @include tablet {
+      display: flex;
+      margin-top: 2%;
+      justify-content: flex-end;
+      left: 20%;
+      // top: 15%;
+    }
+    @include desktop {
+      left: 25%;
+    }
   }
   &__search-container-magnify {
     position: absolute;
     left: 5%;
     top: 30%;
     width: 6vw;
+    @include tablet {
+      width: 3vw;
+      left: 22%;
+    }
+    @include desktop {
+      width: 1.5vw;
+      left: 50%;
+    }
   }
   &__search-container-input {
-    width: 86%;
+    width: 85%;
     height: 13vw;
     padding-left: 15%;
+    border-radius: 4px;
+    border: solid 1px #E1E1E1;
+    background-color: #FAFAFA;
+    @include tablet {
+      width: 67%;
+      height: 5.5vw;
+    }
+    @include desktop {
+      width: 38%;
+      height: 3.2vw;
+      // padding-left: 8%;
+      // ::placeholder {
+      //   right: 9%;
+      // }
+    }
   }
   &__nav {
     display: flex;
     width: 100%;
+    @include tablet {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      margin-right: 3%;
+    }
   }
   &__nav-upload {
-    width: 70%;
+    width: 72%;
     height: 15vw;
-    margin-top: 5%;
-    margin-left: 4%;
+    margin-top: 5.5%;
+    margin-left: 4.6%;
     margin-right: 5%;
-    border-radius: .2rem;
+    border-radius: 4px;
     border: solid #0095FF .25px;
     background-color: #0095FF;
     resize: none;
     color: white;
-    font-size: 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    @include tablet {
+      width: 30%;
+      height: 6vw;
+    }
+    @include desktop {
+      width: 20%;
+      height: 3.5vw;
+      font-size: .75rem;
+      
+    }
   }
   &__nav-upload-img {
     width: 5vw;
-    margin-right: 3%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: -.5%;
+    @include tablet {
+      width: 2vw;
+    }
+    @include desktop {
+      width: 1vw;
+      
+    }
   }
   &__nav-user-icon {
-    width: 16vw;
-    height: 16vw;
-    margin-top: 4.5%;
+    width: 14vw;
+    height: 14vw;
+    margin-top: 5.8%;
     border-radius: 50%;
+    @include tablet {
+      width: 6vw;
+      height: 6vw;
+    }
+    @include desktop {
+      width: 4vw;
+      height: 4vw;
+      margin-top: 4.7%;
+    }
 }
 };
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+}
