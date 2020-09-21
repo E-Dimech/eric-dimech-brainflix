@@ -9,7 +9,7 @@ const VideoInfo = ({ videoPlayerInfo }) => {
     const videoPlayerArr = videoPlayerInfo.map(object => {
 
     return (
-        <div className="video-info">
+        <div key={object.id} className="video-info">
             
             <h1 className="video-info__title">{object.title}</h1>
             <div className="video-info__info">

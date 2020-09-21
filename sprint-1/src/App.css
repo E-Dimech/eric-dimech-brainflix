@@ -12,10 +12,12 @@
   src: url(../assets/globalfont/AvenirNextProLT/Alternativefiles/AvenirDemi.ttf) format("truetype");
   font-weight: 600;
 }
-.test-test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .container-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1200px) {

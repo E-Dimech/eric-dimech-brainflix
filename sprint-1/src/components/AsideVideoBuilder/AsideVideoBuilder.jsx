@@ -1,11 +1,11 @@
 import React from 'react';
 import './AsideVideoBuilder.scss';
 
+
 const AsideVideoBuilder = ({ sideVideos }) => {
      const videoArr = sideVideos.map((object, index) => {
-        //  console.log(object.id);
-    return (
-        // < className="video-build">
+    //  const videoArr = sideVideos.filter(sideVideos.id[1]).map((object, index) => {
+        return (
             <a href="/#" key={object.id} className="video-build__container">
                 <img className="video-build__img" src={object.image} alt={object.title}/>
                 <div className="video-build__titles-container">
@@ -13,7 +13,6 @@ const AsideVideoBuilder = ({ sideVideos }) => {
                     <p className="video-build__channel">{object.channel}</p>
                 </div>
             </a>
-        
         );
     });
     return (
@@ -22,7 +21,7 @@ const AsideVideoBuilder = ({ sideVideos }) => {
             <h2 className="video-build__section-title">NEXT VIDEO</h2>
             {videoArr}
         </div>
-    );
+ );
 };
 
 export default AsideVideoBuilder;

@@ -1,18 +1,18 @@
 import React from 'react';
 
-import Race from '../../assets/Images/video-list-0.jpg';
 import Play from '../../assets/Icons/SVG/Icon-play.svg';
 import FullScreen from '../../assets/Icons/SVG/Icon-fullscreen.svg';
 import Volume from '../../assets/Icons/SVG/Icon-volume.svg';
 
-
 import './Video.scss';
 
-const Video = () => {
+const Video = ({ videoPlayer}) => {
+    const videoHero = videoPlayer.map((object) => {
+
     return (
-        <div className="video">
+        <div key={object.id} className="video">
             <div className="video__container">
-                <video className="video__hero" poster={Race} />
+                <video className="video__hero" poster={object.image} alt={object.title} />
             </div>
 
             <div className="video__controls">
@@ -30,7 +30,9 @@ const Video = () => {
             </div>
         </div>
        )
-    };
+    });
+    return videoHero;
+};
   
 
 

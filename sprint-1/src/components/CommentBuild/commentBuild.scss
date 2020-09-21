@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column; 
         flex-flow: wrap;
-        border-top: 1px solid #E1E1E1;
+        border-top: 1px solid $primary-colour;
         @include tablet {
             margin-left: 5%;
             width: 89%;
@@ -25,7 +25,7 @@
         height: 13vw;
         width: 13vw;
         border-radius: 50%;
-        background-color: #E1E1E1;
+        background-color: $primary-colour;
         margin-top: 4%;
         margin-left: 3%;
         @include tablet {
@@ -42,7 +42,7 @@
     &__name {
         width: 45%;
         height: 12%;
-        color: #323232;
+        color: $primary-text;
         font-size: .9rem;
         font-weight: 600;
         margin: 5.9% 0 0 3%;
@@ -63,7 +63,7 @@
         margin-top: 5.7%;
         margin-bottom: 0;
         padding-left: 1.5%;
-        color: #AFAFAF;
+        color: $accent-colour;
         @include tablet {
             margin-top: 4%;
         }
@@ -73,7 +73,7 @@
         margin-top: 0;
         font-size: .89rem;
         width: 90%;
-        color: #323232;
+        color: $primary-text;
         @include tablet {
             margin-left: 7.8%;
         }

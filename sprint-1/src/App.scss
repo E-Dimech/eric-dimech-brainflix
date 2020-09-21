@@ -1,8 +1,10 @@
 @import '../src/partials/mixins';
 @import '../src/partials/variables';
 
-.test-test {
+.container-col {
+    @include desktop {
     display: flex;
+    }
 }
 
 .main-col {

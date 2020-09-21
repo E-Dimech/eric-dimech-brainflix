@@ -58,7 +58,7 @@
         height: 10vw;
         width: 15%;
         margin-right: 1%;
-        background-color: rgb(15, 15, 15);
+        background-color: $custom-colour;
         opacity: .7;
         border-radius: 4px;
         @include tablet {
@@ -91,7 +91,7 @@
         position: relative;
         height: 10vw;
         margin-right: 1%;
-        background-color: rgb(15, 15, 15);
+        background-color: $custom-colour;
         opacity: .7;
         border-radius: 4px;
         @include tablet {
@@ -133,7 +133,7 @@
         position: relative;
         height: 10vw;
         width: 28%;
-        background-color: rgb(15, 15, 15);
+        background-color: $custom-colour;
         opacity: .7;
         border-radius: 4px;
         @include tablet {

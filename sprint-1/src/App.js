@@ -124,8 +124,8 @@ class App extends React.Component {
     return (
     <div className="App">
       <Header />
-        <Video />
-      <div className="test-test">
+        <Video videoPlayer={this.state.videoPlayer}/>
+      <div className="container-col">
         <section className="main-col">
             <VideoInfo videoPlayerInfo={this.state.videoPlayer} />
             <CommentForm />

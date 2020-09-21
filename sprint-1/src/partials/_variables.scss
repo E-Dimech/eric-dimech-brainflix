@@ -1,9 +1,15 @@
 @import '../partials/fonts';
 
-
-// Styling
+// Font Family
 $font-stack: "Avenir", sans-serif, Arial;
 
+// Colours
+$primary-text: #323232;
+$text-background: #FAFAFA;
+$primary-colour: #E1E1E1;
+$accent-colour: #AFAFAF;
+$brainFlix-blue: #0095FF;
+$custom-colour: rgb(15, 15, 15);
 
 // Breakpoints
 $mobile-breakpoint: 320px;

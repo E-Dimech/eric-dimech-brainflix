@@ -17,7 +17,7 @@
         margin-left: 13%;  
     }
     ::placeholder {
-        color: #323232;
+        color: $primary-text;
         padding-left: 6%;
         padding-top: 10%;
         font-family: $font-stack;
@@ -61,8 +61,8 @@
         height: 29vw;
         margin-top: 3%;
         border-radius: 4px;
-        border: solid #E1E1E1 2px;
-        background-color: #FAFAFA;
+        border: solid $primary-colour 2px;
+        background-color: $text-background;
         resize: none;
         @include tablet {
             width: 56vw;
@@ -77,7 +77,7 @@
     &__name {
         list-style: none;
         font-size: .75rem;
-        color: #AFAFAF;
+        color: $accent-colour;
         font-weight: 600;
         margin-bottom: 8%;
         @include tablet {
@@ -98,7 +98,7 @@
         height: 15vw;
         font-size: .9rem;
         font-weight: 600;
-        background-color: #0095FF;
+        background-color: $brainFlix-blue;
         color: WHITE;
         border: none;
         border-radius: 4px; 
@@ -117,7 +117,7 @@
 .comment-count {
     margin-left: 5%;
     margin-top: 10%;
-    color: #323232;
+    color: $primary-text;
     font-weight: 600;
     @include tablet {
         margin-top: 6%;
