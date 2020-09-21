@@ -175,7 +175,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-left: 4.5%;
-  border-bottom: 1px solid #323232;
+  border-bottom: 1px solid #E1E1E1;
 }
 @media screen and (min-width: 1200px) {
   .video-info__bottom-border {

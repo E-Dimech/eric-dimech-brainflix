@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Imported images for next video section
 import ImageOne from '../src/assets/Images/video-list-0.jpg';
 import ImageTwo from '../src/assets/Images/video-list-1.jpg';
 import ImageThree from '../src/assets/Images/video-list-2.jpg';
@@ -10,6 +11,7 @@ import ImageSeven from '../src/assets/Images/video-list-6.jpg';
 import ImageEight from '../src/assets/Images/video-list-7.jpg';
 import ImageNine from '../src/assets/Images/video-list-8.jpg';
 
+// All imported component files
 import Header from './components/Header/Header';
 import Video from './components/Video/Video';
 import VideoInfo from './components/VideoInfo/VideoInfo';
@@ -17,11 +19,12 @@ import CommentForm from './components/CommentForm/CommentForm';
 import CommentBuild from './components/CommentBuild/CommentBuild';
 import AsideVideoBuilder from './components/AsideVideoBuilder/AsideVideoBuilder';
 
+// Imported sass file 
 import './App.scss';
 
 
 
-
+// All data required to populate videos, images and comments
 class App extends React.Component {
   state = {
 
@@ -48,12 +51,6 @@ class App extends React.Component {
 
 
       sideVideo: [
-          {
-              id: 1,
-              title: "BMX Rampage: 2018 Highlights",
-              channel: "Red Cow",
-              image: ImageOne 
-          },
           {
               id: 2,
               title: "Become A Travel Pro In One Easy Lesson...",
