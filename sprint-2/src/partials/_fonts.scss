@@ -1,0 +1,18 @@
+// All imported fonts required for build
+
+@font-face {
+    font-family: "Avenir";
+    src: url(../assets/globalfont/AvenirNextProLT/Alternativefiles/Avenir.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(../assets/globalfont/AvenirNextProLT/Alternativefiles/AvenirBold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(../assets/globalfont/AvenirNextProLT/Alternativefiles/AvenirDemi.ttf) format("truetype");
+    font-weight: 600;
+}

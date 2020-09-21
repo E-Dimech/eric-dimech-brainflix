@@ -1,0 +1,25 @@
+@import '../src/partials/mixins';
+@import '../src/partials/variables';
+
+// Added these divs to allow aside styling for next video section
+
+.container-col {
+    @include desktop {
+    display: flex;
+    }
+}
+
+.main-col {
+    @include desktop {
+        display: flex;
+        width: 60%;
+        flex-flow:  wrap;
+    }
+}
+
+.sub-col {
+    @include desktop {
+        display: flex;
+        width: 40%;
+    }
+}
