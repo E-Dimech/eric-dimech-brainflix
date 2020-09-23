@@ -3,7 +3,7 @@ import './AsideVideoBuilder.scss';
 
 
 const AsideVideoBuilder = ({ sideVideos }) => {
-     const videoArr = sideVideos.map((object, index) => {
+     const videoArr = sideVideos.map((object, _index) => {
         return (
             <a href="/#" key={object.id} className="video-build__container">
                 <img className="video-build__img" src={object.image} alt={object.title}/>

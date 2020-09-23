@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/Logo/Logo-brainflix.svg';
 import Magnifyer from '../../assets/Icons/SVG/Icon-search.svg';
@@ -10,18 +11,20 @@ import './Header.scss';
 const Header = () => {
     return (
         <div className="header">
-            <a className="header__logo" href="./Header.jsx">
+            <Link to="/" className="header__logo">
                 <img className="header__logo-img" src={Logo} alt="Brainflix logo" />
-            </a>
+            </Link>
             <form className="header__search-container">
                 <img className="header__search-container-magnify" src={Magnifyer} alt="Magnifying glass" />
                 <input className="header__search-container-input" placeholder="Search" />
             </form>
             <div className="header__nav">
-                <button className="header__nav-upload">
-                    <img className="header__nav-upload-img" src={Upload} alt="Upload button" />
-                    UPLOAD
-                </button>
+                <Link to="/upload">
+                    <button className="header__nav-upload">
+                        <img className="header__nav-upload-img" src={Upload} alt="Upload button" />
+                        UPLOAD
+                    </button>
+                </Link>
                 <img className="header__nav-user-icon" src={Mohan} alt="User Mohan badge" />
 
             </div>
