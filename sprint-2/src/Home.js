@@ -14,7 +14,7 @@ const apiKey = "e2952aad-afec-47da-b32c-0b7d5ecfc63";
 
 class Home extends React.Component {
     state = {
-        sideVideo: [],
+        sideVideos: [],
         videoPlayer: [],
         comment: [],
         allVideos: []
@@ -22,21 +22,22 @@ class Home extends React.Component {
 
     componentDidMount() {
       axios
-        .get (`https://project-2-api.herokuapp.com/videos/?api_key=` + apiKey)
+        .get (`https://project-2-api.herokuapp.com/videos/?api_key=${apiKey}`)
             .then(response => {
             const allVideos = response.data;
                 console.log(allVideos)
             axios
-                .get(`https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=` + apiKey)
+                .get(`https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=${apiKey}`)
 
                 .then(response => {
                     let sideVideos = allVideos.filter(video => video.id !== "1af0jruup5gu");
-
+                    console.log(sideVideos)
+                    
                 
                 const videoPlayer = response.data;
-                // const sideVideo = response.data.image;
+                console.log(videoPlayer)
                 const comment = response.data.comments;
-                console.log(comment);
+                // console.log(comment);
                 this.setState({ sideVideos, videoPlayer: [videoPlayer], comment, allVideos});
                 });
          });
@@ -53,7 +54,7 @@ class Home extends React.Component {
                     <CommentBuild comment={this.state.comment} />
                 </section>
                 <aside className="sub-col">
-                    <AsideVideoBuilder sideVideos={this.state.sideVideo} />
+                    <AsideVideoBuilder sideVideos={this.state.sideVideos} />
                 </aside>
             </div>
         </>    

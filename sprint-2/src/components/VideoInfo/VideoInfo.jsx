@@ -5,6 +5,10 @@ import Likes from '../../assets/Icons/SVG/Icon-likes.svg';
 
 import './VideoInfo.scss';
 
+const dateStamp = (date) => {
+    return new Date(date).toLocaleDateString()
+};
+
 const VideoInfo = ({ videoPlayerInfo }) => {
     const videoPlayerArr = videoPlayerInfo.map(object => {
 
@@ -15,7 +19,7 @@ const VideoInfo = ({ videoPlayerInfo }) => {
             <div className="video-info__info">
                 <div className="video-info__subtitle">
                     <p className="video-info__subtitle-author">By {object.channel}</p>
-                    <p className="video-info__subtitle-date">{object.timestamp}</p>
+                    <p className="video-info__subtitle-date">{dateStamp(object.timestamp)}</p>
                 </div>
                 <div className="video-info__socials"> 
                     <div className="video-info__views">
