@@ -1,5 +1,4 @@
-@import '../../partials/mixins';
-@import '../../partials/variables';
+@import '../../partials/global';
 
 .header {
   width: 100%;
@@ -76,6 +75,7 @@
     border-radius: 4px;
     border: solid 1px $primary-colour;
     background-color: $text-background;
+    font-family: $font-stack;
     @include tablet {
       width: 57%;
       height: 5.5vw;
@@ -83,8 +83,6 @@
     @include desktop {
       width: 40%;
       height: 3.2vw;
-      // position: absolute;
-      // top: 20%;
       padding-left: 10%;
       margin-right: 5%;
     }

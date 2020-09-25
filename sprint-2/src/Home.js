@@ -47,13 +47,13 @@ class Home extends React.Component {
     return (
         <>
             <Video videoPlayer={this.state.videoPlayer} />
-            <div className="container-col">
-                <section className="main-col">
+            <div className="desktop-style">
+                <section className="desktop-style__left">
                     <VideoInfo videoPlayerInfo={this.state.videoPlayer} />
                     <CommentForm />
                     <CommentBuild comment={this.state.comment} />
                 </section>
-                <aside className="sub-col">
+                <aside className="desktop-style__right">
                     <AsideVideoBuilder sideVideos={this.state.sideVideos} />
                 </aside>
             </div>

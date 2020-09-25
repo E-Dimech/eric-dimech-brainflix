@@ -1,15 +1,14 @@
-@import '../src/partials/mixins';
-@import '../src/partials/variables';
+@import '../src/partials/global';
 
-// Added these divs to allow aside styling for next video section
+// Added these divs to allow aside styling for desktop next video section
 
-.container-col {
+.desktop-style {
     @include desktop {
     display: flex;
     }
 }
 
-.main-col {
+.desktop-style__left {
     @include desktop {
         display: flex;
         width: 60%;
@@ -17,7 +16,7 @@
     }
 }
 
-.sub-col {
+.desktop-style__right {
     @include desktop {
         display: flex;
         width: 40%;
