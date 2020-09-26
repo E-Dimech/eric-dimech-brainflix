@@ -9,8 +9,8 @@ const dateStamp = (date) => {
     return new Date(date).toLocaleDateString()
 };
 
-const VideoInfo = ({ videoPlayerInfo }) => {
-    const videoPlayerArr = videoPlayerInfo.map(object => {
+const VideoInfo = ({ videoPlayerInfo }) => 
+    videoPlayerInfo.map(object => {
 
     return (
         <div key={object.id} className="video-info">
@@ -37,10 +37,7 @@ const VideoInfo = ({ videoPlayerInfo }) => {
                 <p className="video-info__biography">{object.description}</p>
 
         </div>
-       )
+       );
     });
-  return videoPlayerArr;
-};
-
 
 export default VideoInfo;

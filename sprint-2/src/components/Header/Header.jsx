@@ -19,7 +19,7 @@ const Header = () => {
                 <input className="header__search-container-input" placeholder="Search" />
             </form>
             <div className="header__nav">
-                <Link to="/upload">
+                <Link to="/upload" className="header__nav-link">
                     <button className="header__nav-upload">
                         <img className="header__nav-upload-img" src={Upload} alt="Upload button" />
                         UPLOAD

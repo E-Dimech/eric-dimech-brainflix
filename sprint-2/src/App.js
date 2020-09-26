@@ -30,12 +30,6 @@ class App extends React.Component {
 export default App;
 
 
-
-
-
-
-
-
 // // All data required to populate videos, images and comments
 // class App extends React.Component {
 //   state = {

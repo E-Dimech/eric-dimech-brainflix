@@ -29,7 +29,7 @@
 .video {
   width: 100%;
   height: auto;
-  margin-top: 5%;
+  margin-top: 3.5%;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -60,7 +60,9 @@
 }
 .video__hero {
   width: 100%;
-  height: auto;
+  max-height: 55vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .video__hero {

@@ -6,9 +6,9 @@ import Volume from '../../assets/Icons/SVG/Icon-volume.svg';
 
 import './Video.scss';
 
-const Video = ({ videoPlayer}) => {
-    const videoHero = videoPlayer.map((object) => {
-
+const Video = ({ videoPlayer}) => 
+    videoPlayer.map((object) => {
+        
     return (
         <div key={object.id} className="video">
             <div className="video__container">
@@ -31,9 +31,5 @@ const Video = ({ videoPlayer}) => {
         </div>
        )
     });
-    return videoHero;
-};
   
-
-
 export default Video;

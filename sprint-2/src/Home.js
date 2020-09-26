@@ -25,22 +25,31 @@ class Home extends React.Component {
         .get (`https://project-2-api.herokuapp.com/videos/?api_key=${apiKey}`)
             .then(response => {
             const allVideos = response.data;
-                console.log(allVideos)
             axios
                 .get(`https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=${apiKey}`)
 
                 .then(response => {
                     let sideVideos = allVideos.filter(video => video.id !== "1af0jruup5gu");
-                    console.log(sideVideos)
                     
-                
                 const videoPlayer = response.data;
-                console.log(videoPlayer)
                 const comment = response.data.comments;
-                // console.log(comment);
                 this.setState({ sideVideos, videoPlayer: [videoPlayer], comment, allVideos});
                 });
          });
+    }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.match !== this.props.match) {
+            axios
+            .get (`https://project-2-api.herokuapp.com/videos/${this.props.match.params.id}?api_key=${apiKey}`)
+
+            .then(response => {
+                const videoPlayer = response.data;
+                const comment = response.data.comments;
+                let sideVideos = this.state.allVideos.filter(video => video.id !== this.props.match.params.id);
+                this.setState({ sideVideos, videoPlayer: [videoPlayer], comment});
+            });
+        }
     }
 
     render () {
@@ -59,7 +68,7 @@ class Home extends React.Component {
             </div>
         </>    
         
-    );
+      );
     }
 }
 
