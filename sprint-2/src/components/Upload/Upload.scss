@@ -10,23 +10,17 @@
     &__title {
         color: $primary-text;
         font-size: 1.5rem;
-        margin-top: 8%;
-        margin-left: 5%;
-        margin-bottom: 10%; 
+        margin: 8% 0 10% 5%;
         @include tablet {
             font-size: 2.3rem;
-            margin-bottom: 4%;
-            margin-top: 5%;
-            margin-left: 4%;
+            margin: 5% 0 4% 4%;
         }
         @include desktop {
             font-size: 1.85rem;
-            margin-left: 13%;
-            margin-top: 3%;
-            margin-bottom: 2%;
+            margin: 3% 0 2% 13%;
         } 
     }
-    &__test {
+    &__container {
         @include tablet {
             width: 93%;
             margin-left: 0;
@@ -38,7 +32,7 @@
             display: flex;
         }
     }
-    &__double-test {
+    &__border {
         @include tablet {
             border-top: 1px solid $primary-colour;
             width: 100%;
@@ -67,22 +61,16 @@
         margin-left: 5%;
         margin-bottom: 2%;
         @include tablet {
-            margin-bottom: 1%;
-            margin-top: 5%;
-            margin-left: 5.5%;
+            margin: 5% 0 1% 5.5%;
         }
         @include desktop {
-            margin-left: 0;
-            margin-top: 10%;
-            margin-bottom: 2%;
+            margin: 10% 0 2% 0;
         }
     }
     &__thumb-img{
         width: 90vw;
         border-radius: 4px;
-        margin-top: 0;
-        margin-bottom: 5%;
-        margin-left: 5%;
+        margin: 0 0 5% 5%;
         @include tablet {
             width: 45vw;
             margin-bottom: 3%;
@@ -95,33 +83,28 @@
             box-sizing: border-box;
         }
     }
-}
-
-.upload-form {
-    ::placeholder {
-        color: $primary-text;
-        padding-left: 5%;
-        padding-top: 4%;
-        font-family: $font-stack;
-        @include tablet {
-            padding-top: 2%;
-            padding-left: 2%;
-        }
-        @include desktop {
-            display: flex;
-            width: 70%;
+    &__form {
+        ::placeholder {
+            color: $primary-text;
+            padding-left: 5%;
+            padding-top: 4%;
+            font-family: $font-stack;
+            @include tablet {
+                padding-top: 2%;
+                padding-left: 2%;
+            }
+            @include desktop {
+                display: flex;
+                width: 70%;
+            }
         }
     }
-    &__list {
+    &__form-list {
         padding: 0;
         margin-left: 5%;
     }
-    &__vid-title {
-        list-style: none;
-        font-size: .75rem;
-        color: $accent-colour;
-        font-weight: 600;
-
+    &__form-vid-title {
+        @include inputLabel();
         margin-bottom: 5%;
         @include tablet {
             margin-bottom: 3%;
@@ -130,15 +113,9 @@
             margin-top: 8.5%;
         }
     }
-    &__vid-title-input {
-        box-sizing: border-box;
-        width: 90vw;
+    &__form-vid-title-input {
+        @include textInput();
         height: 14vw;
-        margin-top: 2%;
-        border-radius: 4px;
-        border: solid $primary-colour 1px;
-        background-color: $text-background;
-        resize: none;
         @include tablet {
             height: 6vw;
             margin-top: 1%;
@@ -150,26 +127,16 @@
             margin-bottom: 2%;
         }
     }
-    &__vid-description {
-        list-style: none;
-        font-size: .75rem;
-        color: $accent-colour;
-        font-weight: 600;
-
+    &__form-vid-description {
+        @include inputLabel();
         margin-bottom: 10%;
         @include tablet {
             margin-bottom: 5%;
         }
     }
-    &__vid-description-input {
-        box-sizing: border-box;
-        width: 90vw;
+    &__form-vid-description-input {
+        @include textInput();
         height: 45vw;
-        margin-top: 2%;
-        border-radius: 4px;
-        border: solid $primary-colour 1px;
-        background-color: $text-background;
-        resize: none;
         @include tablet {
             height: 19vw;
             margin-top: 1%;
@@ -180,10 +147,8 @@
             margin-top: 2%;
         }
     }
-}
-
-.upload-button {
-    margin-left: 5%;
+    &__button {
+        margin-left: 5%;
         @include tablet {
         display: flex;
         flex-direction: row-reverse;
@@ -196,7 +161,8 @@
         width: 77.5%;
         margin-left: 13%;
         }
-    &__publish-container {
+    }    
+    &__button-publish-container {
         margin-bottom: 3%;
         display: flex; 
         @include tablet {
@@ -208,27 +174,12 @@
             margin-right: 0;
         }
     }
-    &__publish {
-        box-sizing: border-box;
-        width: 90vw;
-        height: 15vw;
-        font-size: .9rem;
-        font-weight: 600;
+    &__button-publish {
+        @include buttonStyle();
         background-color: $brainFlix-blue;
         color: white;
-        border: none;
-        border-radius: 4px;
-        @include tablet {
-            width: 21vw;
-            height: 6vw;
-        }
-        @include desktop {
-            width: 12vw;
-            height: 4vw;
-            margin-right: 0;
-        }
     }
-    &__cancel-container {
+    &__button-cancel-container {
         display: flex;
         @include tablet {
             margin-top: 5%;
@@ -237,23 +188,9 @@
             margin-top: 4%;
         }
     }
-    &__cancel {
-        box-sizing: border-box;
-        width: 90vw;
-        height: 15vw;
-        font-size: .9rem;
-        font-weight: 600;
-        background-color: white;
+    &__button-cancel {
         color: $brainFlix-blue;
-        border: none;
-        border-radius: 4px;
-        @include tablet {
-            width: 21vw;
-            height: 6vw;
-        }
-        @include desktop {
-            width: 12vw;
-            height: 4vw;
-        }
+        background-color: white;
+        @include buttonStyle();
     }
 }

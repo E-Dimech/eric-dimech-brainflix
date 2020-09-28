@@ -17,3 +17,44 @@
         @content;
     }
 }
+
+// Upload Page Styling 
+
+// Textarea Label Styles
+@mixin inputLabel {
+    list-style: none;
+    font-size: .75rem;
+    color: $accent-colour;
+    font-weight: 600;
+}
+
+// Textarea Input Styles
+@mixin textInput {
+    box-sizing: border-box;
+    width: 90vw;
+    margin-top: 2%;
+    border-radius: 4px;
+    border: solid $primary-colour 1px;
+    background-color: $text-background;
+    resize: none;
+}
+
+// Button Styles
+@mixin buttonStyle {
+    box-sizing: border-box;
+    width: 90vw;
+    height: 15vw;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    @include tablet {
+        width: 21vw;
+        height: 6vw;
+    }
+    @include desktop {
+        width: 12vw;
+        height: 4vw;
+        margin-right: 0;
+    }
+}

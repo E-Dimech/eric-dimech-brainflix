@@ -111,7 +111,7 @@
 }
 @media screen and (min-width: 1200px) {
   .video-build__titles-container {
-    width: 40%;
+    width: 41%;
   }
 }
 .video-build__title {
@@ -120,6 +120,10 @@
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .video-build__title {

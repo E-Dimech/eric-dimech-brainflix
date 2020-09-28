@@ -6,7 +6,8 @@ import CommentForm from './components/CommentForm/CommentForm';
 import CommentBuild from './components/CommentBuild/CommentBuild';
 import AsideVideoBuilder from './components/AsideVideoBuilder/AsideVideoBuilder';
 
-import './App.scss';
+import './Home.scss';
+
 
 import axios from 'axios';
 

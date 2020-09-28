@@ -2,12 +2,9 @@ import React from 'react';
 
 import Views from '../../assets/Icons/SVG/Icon-views.svg';
 import Likes from '../../assets/Icons/SVG/Icon-likes.svg';
+import DateStamp from '../TimeConversion/TimeConversion';
 
 import './VideoInfo.scss';
-
-const dateStamp = (date) => {
-    return new Date(date).toLocaleDateString()
-};
 
 const VideoInfo = ({ videoPlayerInfo }) => 
     videoPlayerInfo.map(object => {
@@ -19,7 +16,7 @@ const VideoInfo = ({ videoPlayerInfo }) =>
             <div className="video-info__info">
                 <div className="video-info__subtitle">
                     <p className="video-info__subtitle-author">By {object.channel}</p>
-                    <p className="video-info__subtitle-date">{dateStamp(object.timestamp)}</p>
+                    <p className="video-info__subtitle-date">{DateStamp(object.timestamp)}</p>
                 </div>
                 <div className="video-info__socials"> 
                     <div className="video-info__views">

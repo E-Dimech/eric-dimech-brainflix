@@ -97,11 +97,6 @@
       margin-right: 2%;
     }
   }
-  // &__nav-link {
-  //   @include tablet {
-  //     width: 10vw;
-  //   }
-  // }
   &__nav-upload {
     width: 72%;
     min-width: 70vw;
@@ -121,7 +116,6 @@
       height: 6vw;
     }
     @include desktop {
-      // width: 20%;
       min-width: 7.5vw;
       height: 3.5vw;
       font-size: .75rem;

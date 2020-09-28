@@ -59,7 +59,7 @@
             width: 30%;
         }
         @include desktop {
-            width: 40%;
+            width: 41%;
         }
     }
     &__title {
@@ -68,6 +68,12 @@
         font-weight: 600;
         font-size: .9rem;
         text-decoration: none;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+
         @include tablet {
             font-size: 1rem;
             margin-bottom: 4%;

@@ -1,0 +1,24 @@
+@import '../src/partials/global';
+
+// Added these divs to allow aside styling for desktop next video section
+
+.desktop-style {
+    @include desktop {
+    display: flex;
+    }
+}
+
+.desktop-style__left {
+    @include desktop {
+        display: flex;
+        width: 60%;
+        flex-flow:  wrap;
+    }
+}
+
+.desktop-style__right {
+    @include desktop {
+        display: flex;
+        width: 40%;
+    }
+}
