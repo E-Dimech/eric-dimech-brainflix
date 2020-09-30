@@ -17,9 +17,9 @@
     }
     ::placeholder {
         color: $primary-text;
+        font-family: $font-stack;
         padding-left: 6%;
         padding-top: 10%;
-        font-family: $font-stack;
         @include tablet {
             padding-top: 2.4%;
             padding-left: 3%;
