@@ -3,14 +3,15 @@ const app = express();
 require('dotenv').config()
 const port = process.env.PORT || process.argv[2] || 8080;
 const bodyParser = require('body-parser');
-// const uuid = require('uuid');
-const cors = require('cors');
 const fs = require('fs');
+const uuid = require("react-uuid");
+const cors = require('cors');
+
+const videos = require('./modules/data.json');
 
 app.use(bodyParser.json());
 app.use(cors());
-
-const videos = require('./modules/data.json');
+app.use(express.json());
 
 app.get('/videos', (_req, res) => {
     res.json(videos.videos.map((video) => video))
@@ -20,11 +21,10 @@ app.get('/videos/:id', (_req, res) => {
     res.json(videos.videos.map((video) => video))
 })
 
-app.post('/videos', (req, res) => {
-    // let newUpId = uuid();
-    // let newUpVideo = [...videos(newUpVideo)];
+app.post('/videos', (req, _res) => {
+    
     let newUpVideo = {
-        id: 10,
+        id: uuid(),
         title: req.body.title,
         channel: "ThatNewVid",
         image: req.body.image,
@@ -32,6 +32,7 @@ app.post('/videos', (req, res) => {
         views: 1986,
         likes: 1001,
         duration: '2:23',
+        video: "",
         timestamp: Date.now(),
         comments: [
         {
@@ -58,31 +59,18 @@ app.post('/videos', (req, res) => {
       ],
     };
 
-    // loadNewVideo = (videos => [...videos, newUpVideo]);
-    // fs.readFileSync(videos, contents);
-    // fs.writeFileSync(videos, JSON.stringify(newUpVideo));
-    // res.status(201).send(newUpVideo);
-    // const fuckYouBs = 
-    fs.readFileSync(videos);
-    JSON.parse();
-    videos.push(newUpVideo);
-    fs.writeFileSync(videos, JSON.stringify(newUpVideo));
+    const readData = fs.readFileSync("./modules/data.json");
 
+    const parseData = JSON.parse(readData);
+    
+    parseData['videos'].push(req.body);
 
+    const stringData = JSON.stringify(parseData);
 
-    // res.send= (loadNewVideo);
-    // fs.writeFile('./modules/data.json', newUpVideo,);
-    // fs.writeFile('./modules/data.json', JSON.stringify(newUpVideo), err => {
-    //     if (err) throw err;
-    // });
-    // let newUpString = JSON.stringify(newUpVideo);
-
-
-})
-
-app.use(express.urlencoded({ extended :true }));
-app.use(express.json());
-app.use(express.static("public"));
+    fs.writeFileSync('./modules/data.json', stringData, (err) => {
+            if (err) throw err;
+        });
+    })
 
 app.listen(port, () => {
     console.log(`This server is running bitch on ${port}`)

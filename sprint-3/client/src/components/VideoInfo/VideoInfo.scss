@@ -25,12 +25,12 @@
             justify-content: space-between;
         }
         @include desktop {
-            width: 95%;
+            width: 51vw;
         }
     }
     &__subtitle {
         display: flex;
-        width: 55%;
+        width: 65%;
         margin-left: 5%;
         @include tablet {
             margin-top: 1.8%;
@@ -39,6 +39,7 @@
             margin-top: 0;
             margin-left: 3.5%;
             padding-top: 2.2%;
+            width: 70%;
         }
     }
     &__subtitle-author {
@@ -75,6 +76,9 @@
         @include tablet {
             margin-left: 0;
             margin-right: 3%;
+        }
+        @include desktop {
+            padding-right: 3%;
         }       
     }
     &__views {

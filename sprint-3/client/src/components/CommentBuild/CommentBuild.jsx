@@ -1,6 +1,10 @@
 import React from 'react';
-import DateStamp from '../TimeConversion/TimeConversion';
+// import DateStamp from '../TimeConversion/TimeConversion';
 import './CommentBuild.scss';
+
+const DateStamp = (date) => {
+    return new Date(date).toLocaleDateString()
+};
 
 const CommentBuild = ({ comment }) =>  
     comment.map((object) => {

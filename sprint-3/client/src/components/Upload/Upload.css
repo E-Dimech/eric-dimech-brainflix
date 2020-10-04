@@ -93,9 +93,12 @@
     display: -ms-flexbox;
     display: flex;
     width: 30%;
+    height: 30%;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
-    margin-right: 4%;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    margin-right: 1%;
   }
 }
 .upload__thumb-label {
@@ -112,7 +115,8 @@
 }
 @media screen and (min-width: 1200px) {
   .upload__thumb-label {
-    margin: 10% 0 2% 0;
+    margin: 10% 0 0 0;
+    height: 2vw;
   }
 }
 .upload__thumb-img {
@@ -129,11 +133,19 @@
 }
 @media screen and (min-width: 1200px) {
   .upload__thumb-img {
-    width: 26vw;
+    width: 24vw;
+    height: 13.5vw;
     margin-left: 0;
     margin-bottom: 12%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .upload__form {
+    margin-left: 1%;
+    margin-top: 0.7%;
+    position: relative;
   }
 }
 .upload__form ::-webkit-input-placeholder {
@@ -219,6 +231,11 @@
   padding: 0;
   margin-left: 5%;
 }
+@media screen and (min-width: 1200px) {
+  .upload__form-list {
+    margin-bottom: 10%;
+  }
+}
 .upload__form-vid-title {
   list-style: none;
   font-size: 0.75rem;
@@ -233,7 +250,8 @@
 }
 @media screen and (min-width: 1200px) {
   .upload__form-vid-title {
-    margin-top: 8.5%;
+    margin-top: 3.8%;
+    margin-bottom: 0;
   }
 }
 .upload__form-vid-title-input {
@@ -256,9 +274,9 @@
 }
 @media screen and (min-width: 1200px) {
   .upload__form-vid-title-input {
-    width: 188%;
+    width: 50vw;
     height: 3.5vw;
-    margin-top: 2%;
+    margin-top: 1.2%;
     margin-bottom: 2%;
   }
 }
@@ -294,9 +312,9 @@
 }
 @media screen and (min-width: 1200px) {
   .upload__form-vid-description-input {
-    width: 188%;
-    height: 7vw;
-    margin-top: 2%;
+    width: 50vw;
+    height: 6.9vw;
+    margin-top: 1.2%;
   }
 }
 .upload__button {
@@ -312,15 +330,16 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     margin-bottom: 15%;
-    margin-left: 3.5%;
-    width: 93%;
+    margin-left: 4.5%;
+    width: 99%;
     border-top: 1px solid #E1E1E1;
   }
 }
 @media screen and (min-width: 1200px) {
   .upload__button {
-    width: 77.5%;
-    margin-left: 13%;
+    width: 78vw;
+    position: absolute;
+    left: -27.5vw;
   }
 }
 .upload__button-publish-container {
@@ -332,7 +351,7 @@
 @media screen and (min-width: 768px) {
   .upload__button-publish-container {
     margin-top: 5%;
-    margin-right: 1.5%;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {

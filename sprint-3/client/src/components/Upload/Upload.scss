@@ -50,8 +50,11 @@
         @include desktop {
             display: flex;
             width: 30%;
+            height: 30%;
             flex-flow:  wrap;
-            margin-right: 4%;
+            align-content: flex-start;
+            margin-right: 1%;
+
         }
     }
     &__thumb-label {
@@ -64,7 +67,8 @@
             margin: 5% 0 1% 5.5%;
         }
         @include desktop {
-            margin: 10% 0 2% 0;
+            margin: 10% 0 0 0;
+            height: 2vw;
         }
     }
     &__thumb-img{
@@ -77,13 +81,20 @@
             margin-left: 5.5%;
         }
         @include desktop {
-            width: 26vw;
+            width: 24vw;
+            height: 13.5vw;
             margin-left: 0;
             margin-bottom: 12%;
             box-sizing: border-box;
         }
     }
     &__form {
+        @include desktop {
+            margin-left: 1%;
+            margin-top: .7%;
+            position: relative;
+
+        }
         ::placeholder {
             color: $primary-text;
             padding-left: 5%;
@@ -102,6 +113,9 @@
     &__form-list {
         padding: 0;
         margin-left: 5%;
+        @include desktop {
+            margin-bottom: 10%;
+        }
     }
     &__form-vid-title {
         @include inputLabel();
@@ -110,7 +124,8 @@
             margin-bottom: 3%;
         }
         @include desktop {
-            margin-top: 8.5%;
+            margin-top: 3.8%;
+            margin-bottom: 0;
         }
     }
     &__form-vid-title-input {
@@ -122,9 +137,10 @@
             margin-top: 1%;
         }
         @include desktop {
-            width: 188%;
+            // width: 220%;
+            width: 50vw;
             height: 3.5vw;
-            margin-top: 2%;
+            margin-top: 1.2%;
             margin-bottom: 2%;
         }
     }
@@ -144,9 +160,10 @@
             margin-top: 1%;
         }
         @include desktop {
-            width: 188%;
-            height: 7vw;
-            margin-top: 2%;
+            // width: 220%;
+            width: 50vw;
+            height: 6.9vw;
+            margin-top: 1.2%;
         }
     }
     &__button {
@@ -155,13 +172,15 @@
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: 15%;
-        margin-left: 3.5%;
-        width: 93%;
+        margin-left: 4.5%;
+        width: 99%;
         border-top: 1px solid $primary-colour;
         }
         @include desktop {
-        width: 77.5%;
-        margin-left: 13%;
+        // width: 315%;
+        width: 78vw;
+        position: absolute;
+        left: -27.5vw;
         }
     }    
     &__button-publish-container {
@@ -169,7 +188,7 @@
         display: flex; 
         @include tablet {
             margin-top: 5%;
-            margin-right: 1.5%;
+            margin-right: 0;
         }
         @include desktop {
             margin-top: 4%;

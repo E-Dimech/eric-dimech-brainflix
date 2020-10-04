@@ -10,14 +10,11 @@ import './Home.scss';
 
 import axios from 'axios';
 
-// const apiKey = "e2952aad-afec-47da-b32c-0b7d5ecfc63";
-
 class Home extends React.Component {
     state = {
         sideVideos: [],
         videoPlayer: [],
         comment: [],
-        // allVideos: []
     };
 
     componentDidMount() {
@@ -26,12 +23,12 @@ class Home extends React.Component {
             .then(response => {
                 this.setState({videoPlayer: response.data[0]})
                 this.setState({sideVideos: response.data})
-                this.setState({comment: response.data[0].comments})        
-                // console.log(response)  
+                this.setState({comment: response.data[0].comments})          
             });
     }
 
     componentDidUpdate(prevProps) {
+         
         if (this.props.match.params.id !== prevProps.match.params.id) {
             
             axios

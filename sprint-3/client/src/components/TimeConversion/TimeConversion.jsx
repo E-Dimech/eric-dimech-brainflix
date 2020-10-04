@@ -1,6 +1,6 @@
 
-const DateStamp = (date) => {
-    return new Date(date).toLocaleDateString()
-};
+// const DateStamp = (date) => {
+//     return new Date(date).toLocaleDateString()
+// };
 
-export default DateStamp;
+// export default DateStamp;
