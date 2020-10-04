@@ -153,6 +153,7 @@
   border-radius: 4px;
   border: solid #E1E1E1 2px;
   background-color: #FAFAFA;
+  font-family: "Avenir", sans-serif, Arial;
   resize: none;
 }
 @media screen and (min-width: 768px) {

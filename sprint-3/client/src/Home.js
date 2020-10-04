@@ -27,7 +27,7 @@ class Home extends React.Component {
                 this.setState({videoPlayer: response.data[0]})
                 this.setState({sideVideos: response.data})
                 this.setState({comment: response.data[0].comments})        
-                        
+                // console.log(response)  
             });
     }
 

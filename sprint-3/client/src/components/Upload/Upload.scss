@@ -114,6 +114,7 @@
         }
     }
     &__form-vid-title-input {
+        font-family: $font-stack;
         @include textInput();
         height: 14vw;
         @include tablet {
@@ -135,6 +136,7 @@
         }
     }
     &__form-vid-description-input {
+        font-family: $font-stack;
         @include textInput();
         height: 45vw;
         @include tablet {

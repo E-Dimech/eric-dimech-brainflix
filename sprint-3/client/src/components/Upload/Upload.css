@@ -237,6 +237,7 @@
   }
 }
 .upload__form-vid-title-input {
+  font-family: "Avenir", sans-serif, Arial;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 90vw;
@@ -274,6 +275,7 @@
   }
 }
 .upload__form-vid-description-input {
+  font-family: "Avenir", sans-serif, Arial;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 90vw;

@@ -62,6 +62,7 @@
         border-radius: 4px;
         border: solid $primary-colour 2px;
         background-color: $text-background;
+        font-family: $font-stack;
         resize: none;
         @include tablet {
             width: 56vw;
