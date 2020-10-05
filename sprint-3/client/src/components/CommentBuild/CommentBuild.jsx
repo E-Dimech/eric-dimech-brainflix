@@ -1,5 +1,4 @@
 import React from 'react';
-// import DateStamp from '../TimeConversion/TimeConversion';
 import './CommentBuild.scss';
 
 const DateStamp = (date) => {

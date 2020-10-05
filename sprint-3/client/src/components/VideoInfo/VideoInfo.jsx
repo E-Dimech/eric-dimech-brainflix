@@ -2,7 +2,6 @@ import React from 'react';
 
 import Views from '../../assets/Icons/SVG/Icon-views.svg';
 import Likes from '../../assets/Icons/SVG/Icon-likes.svg';
-// import DateStamp from '../TimeConversion/TimeConversion';
 
 import './VideoInfo.scss';
 

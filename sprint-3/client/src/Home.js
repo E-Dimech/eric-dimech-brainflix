@@ -23,23 +23,31 @@ class Home extends React.Component {
             .then(response => {
                 this.setState({videoPlayer: response.data[0]})
                 this.setState({sideVideos: response.data})
-                this.setState({comment: response.data[0].comments})          
+                this.setState({comment: response.data[0].comments}) 
+                
+                
+                // axios
+                //   .get('/videos/1af0jruup5gu')
+                //     .then(response => {
+                //         const videoPlayer = response.data;
+                //         let sideVideos = videoPlayer.filter(video => video.id !== '1af0jruup5gu')
+                //         const comment = videoPlayer[0].comments;
+                //         this.setState({ videoPlayer, sideVideos, comment})
+                //     })
             });
     }
-
+// 
     componentDidUpdate(prevProps) {
-         
+   
         if (this.props.match.params.id !== prevProps.match.params.id) {
-            
+           
             axios
-                .get ('/videos/' + this.props.match.params.id)
-
+                .get ('/videos/:id' + this.props.match.params.id)
                     .then((response) => {
                         this.setState({videoPlayer: response.data.find((video) => video['id'] === this.props.match.params.id),
                         });
                      })    
-                    }           
-                }
+                 }};
 
     render () {
     return (
