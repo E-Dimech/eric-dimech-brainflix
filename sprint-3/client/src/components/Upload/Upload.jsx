@@ -70,7 +70,7 @@ class Upload extends React.Component {
                     console.log(response)
                 })
                     .catch((error) => {
-                        // console.log(error)
+                        console.log(error)
                     });
             
         e.target.reset();

@@ -137,7 +137,6 @@
             margin-top: 1%;
         }
         @include desktop {
-            // width: 220%;
             width: 50vw;
             height: 3.5vw;
             margin-top: 1.2%;
@@ -160,7 +159,6 @@
             margin-top: 1%;
         }
         @include desktop {
-            // width: 220%;
             width: 50vw;
             height: 6.9vw;
             margin-top: 1.2%;
@@ -177,7 +175,6 @@
         border-top: 1px solid $primary-colour;
         }
         @include desktop {
-        // width: 315%;
         width: 78vw;
         position: absolute;
         left: -27.5vw;

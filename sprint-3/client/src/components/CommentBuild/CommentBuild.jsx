@@ -17,7 +17,6 @@ const CommentBuild = ({ comment }) =>
                 </div>
             </div>
         );
-
     });
 
 

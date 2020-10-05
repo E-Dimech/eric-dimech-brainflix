@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Video from './components/Video/Video';
-import VideoInfo from './components/VideoInfo/VideoInfo';
-import CommentForm from './components/CommentForm/CommentForm';
-import CommentBuild from './components/CommentBuild/CommentBuild';
-import AsideVideoBuilder from './components/AsideVideoBuilder/AsideVideoBuilder';
+import Video from '../Video/Video';
+import VideoInfo from '../VideoInfo/VideoInfo';
+import CommentForm from '../CommentForm/CommentForm';
+import CommentBuild from '../CommentBuild/CommentBuild';
+import AsideVideoBuilder from '../AsideVideoBuilder/AsideVideoBuilder';
 
 import './Home.scss';
 
@@ -24,19 +24,9 @@ class Home extends React.Component {
                 this.setState({videoPlayer: response.data[0]})
                 this.setState({sideVideos: response.data})
                 this.setState({comment: response.data[0].comments}) 
-                
-                
-                // axios
-                //   .get('/videos/1af0jruup5gu')
-                //     .then(response => {
-                //         const videoPlayer = response.data;
-                //         let sideVideos = videoPlayer.filter(video => video.id !== '1af0jruup5gu')
-                //         const comment = videoPlayer[0].comments;
-                //         this.setState({ videoPlayer, sideVideos, comment})
-                //     })
             });
     }
-// 
+
     componentDidUpdate(prevProps) {
    
         if (this.props.match.params.id !== prevProps.match.params.id) {

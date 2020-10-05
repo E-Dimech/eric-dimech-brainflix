@@ -73,5 +73,5 @@ app.post('/videos', (req, _res) => {
     })
 
 app.listen(port, () => {
-    console.log(`This server is running bitch on ${port}`)
+    console.log(`This server is running on ${port}`)
 });
